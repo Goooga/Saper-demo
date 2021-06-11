@@ -12,7 +12,7 @@ OPEN_COUNT = 0
 MARK_COUNT = 0
 TILE_SIZE = 50
 
-def itemClicked(event):
+def item_clicked(event):
     global FIELD,MINEFIELD
     canvas_item_id = c.find_withtag('current')[-1]
     for row in FIELD:
@@ -22,7 +22,7 @@ def itemClicked(event):
                     tile.open_cell()
                 return
 
-def itemClickedRight(event):
+def item_clicked_right(event):
     global FIELD,MINEFIELD
     canvas_item_id = c.find_withtag('current')[-1]
     for row in FIELD:
@@ -84,8 +84,8 @@ class Tile():
 
 root = Tk()
 c = Canvas(root,width = TILE_SIZE*SIZE_X,height = TILE_SIZE*SIZE_Y,bg="white")
-c.bind("<Button-1>",itemClicked)
-c.bind("<Button-3>",itemClicked)
+c.bind("<Button-1>",item_clicked)
+c.bind("<Button-3>",item_clicked)
 c.pack()
 
 

@@ -34,7 +34,6 @@ def item_clicked_right(event):
 
 
 def GameOver():
-    c.pack_forget()
     l=Label(root,text="U lose")
     l.pack()
 

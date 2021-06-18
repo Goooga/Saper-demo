@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Switches</title>
+    <link rel="stylesheet" type="text/css" href="./css/switch-style.css">
+    <script type="text/javascript" src="./scripts/switch-scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container">
+            <div class="box">
+                <label class="switch">
+                    <input type="checkbox" onchange="cheap_button()" id = "cheap_b">
+                    <span class="slider round" id="cheap"></span>
+                </label>
+                <p class="string">Cheap</p>
+            </div>
+            <div class="box">
+                <label class="switch">
+                    <input type="checkbox" onchange="fast_button()" id = "fast_b">
+                    <span class="slider round" id="fast"></span>
+                </label>
+                <p class="string">Fast</p>
+            </div>
+            <div class="box">
+                <label class="switch">
+                    <input type="checkbox" onchange="good_button()" id = "good_b">
+                    <span class="slider round" id="good"></span>
+                </label>
+                <p class="string">Good</p>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,69 +1,199 @@
-h1{
-    background-color: aqua;
-    height: 3em;
-    width: 15em;
-    margin: 50px;
-    border: black solid 10px;
-    padding: 20px;
+.white-container {
+  display: flex;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  justify-content: center;
 }
-body{
-    margin:0;
-    width:100%;
-    height:100%vh;
-    background: linear-gradient(-135deg, #c850c8, #4158d0);
+
+.gray-container {
+  display: flex;
+  background: gray;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-table{
-    border-collapse: collapse;
+
+
+.game-holder {
+  background: red;
+  width: 600px;
+  height: 700px;
 }
-tr{
-    background: rgb(0, 47, 255);
+
+.description {
+  height: 700px;
+  width: 300px;
+  background: white;
 }
-th{
-    padding: 5px;
-    border: black solid 2px;
+
+.game {
+  height: 600px;
+  width: 600px;
+  background: blue;
 }
-td{
-    padding: 5px;
-    border: black solid 2px;
-    text-align: center;
+
+.top-bar {
+  height: 100px;
+  width: 600px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.odd-row{
-    background: rgb(238, 224, 29);
+
+.diff-selector {
+  margin: 20px;
 }
-.even-row{
-    background: rgb(179, 168, 19);
+
+.button {
+  margin: 20px;
 }
-.super-column{
-    font-weight: bold;
-    width:200px;
+
+.mine-counter {
+  height: 50px;
+  width: 100px;
+  background: white;
+  margin: 20px;
 }
-#target{
-    font-weight: normal;
+
+.timer {
+  height: 50px;
+  width: 100px;
+  background: white;
+  margin: 20px;
 }
-.red-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 500px;
-    background-color: red;
+
+.sound {
+  height: 50px;
+  width: 100px;
+  background: white;
+  margin: 20px;
 }
-.blue-box{
-    order:3;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(34, 12, 238);
+
+.mine-cell {
+  box-sizing: border-box;
+  border: solid black;
 }
-.green-box{ 
-    order:2;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(38, 238, 12);
+
+.mine-cell-active {
+  background: white;
 }
-.yellow-box{
-    order:1;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(255, 238, 0);
+
+.mine-cell-inactive {
+  background: gray;
+}
+
+.minefield {
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.switch-holder{
+  display: flex;
+  width: 10em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+#blue {
+  background-color: #2196F3;
+}
+
+input:focus+#blue {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+#red {
+  background-color: #f32121;
+}
+
+input:focus+#red {
+  box-shadow: 0 0 1px #f32121;
+}
+
+input:checked+#green {
+  background-color: #4bf321;
+}
+
+input:focus+#green {
+  box-shadow: 0 0 1px #4bf321;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

@@ -1,4 +1,4 @@
-.limiter{
+.limiter {
     width: 100%;
     height: 100vh;
     background: linear-gradient(45deg, #c850c0, #4158d0);
@@ -6,38 +6,50 @@
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     border-radius: 10px;
     background: white;
-    padding: 10px;;
+    padding: 10px;
 }
-.string{
-    width: 5em;
-    text-align: center;
-}
-.box{
+
+.box {
     margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
+body {
+    margin: 0;
+}
+
+.string {
+    width: 5em;
+    text-align: center;
+}
+
+/* The switch - the box around the slider */
+
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -47,9 +59,9 @@
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -59,46 +71,53 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + #cheap {
-    background-color: #f32121;
-  }
-  
-  input:focus + #cheap {
-    box-shadow: 0 0 1px #f32121;
-  }
+}
 
-  input:checked + #good {
-    background-color: #33f321;
-  }
-  
-  input:focus + #good {
-    box-shadow: 0 0 1px #33f321;
-  }
-  input:checked + #fast {
-    background-color: #4121f3;
-  }
-  
-  input:focus + #fast {
-    box-shadow: 0 0 1px #4121f3;
-  }
-  
-  input:checked + .slider:before {
+/*
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}*/
+
+input:checked+#cheap {
+    background-color: #f32121;
+}
+
+input:focus+#cheap {
+    box-shadow: 0 0 1px #f32121;
+}
+
+input:checked+#fast {
+    background-color: #44f321;
+}
+
+input:focus+#fast {
+    box-shadow: 0 0 1px #3af321;
+}
+
+input:checked+#good {
+    background-color: #3621f3;
+}
+
+input:focus+#good {
+    box-shadow: 0 0 1px #2136f3;
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}
 
-body{
-    margin:0;
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }

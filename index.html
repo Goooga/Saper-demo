@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <head>
     <title>Привет!</title>
-    <link rel="stylesheet" type="text/css" href = "./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
 </head>
-<body>              
-    <h1>1.Большой руссуий текст</h1>
-    <h2>2.Большой руссуий текст</h2>
-    <h3>3.Большой руссуий текст</h3>
-    <h4>4.Большой руссуий текст</h4>
-    <h5>5.Большой руссуий текст</h5>
-    <h6>6.Большой руссуий текст</h6>
-    <p>Cписок дел:</p>
-    <ul>
-        <li>to do</li>
-        <li>to do</li>
-        <li>to buy:</li>
-        <ol>
-            <li>Vodka</li>
-            <li>Перо вороны</li>
-            <li>car</li>
-        </ol>
-    </ul>
-
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Имя</th>
-                <th>Тема проекта</th>
-                <th>Наставник</th>
-                <th>Оценка</th>
-            </tr>          
-        </thead>
-        <tbody>
-            <tr class = "odd-row">
-                <td>1</td>
-                <td class = "super-column">Шрек</td>
-                <td>Жизнь в болоте</td>
-                <td>Осел</td>
-                <td>5</td>
-            </tr>
-            <tr class = "even-row">
-                <td>2</td>
-                <td class = "super-column" id = "target">Facing slave</td>
-                <td>beckoming boss of the gym</td>
-                <td>lizer man</td>
-                <td>2</td>
-            </tr>
-            <tr class = "odd-row">
-                <td>3</td>
-                <td class = "super-column">Facing slave</td>
-                <td>beckoming boss of the gym</td>
-                <td>lizer man</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class = "red-box">
-        <div class = "blue-box">
+<body>
+    <div class="gray-container">
+        <div class="switch-holder">
+            <label class="switch">
+                <input type="checkbox" onchange="s_cheap()" id = "cheap">
+                <span class="slider round" id="red"></span>
+            </label>
+            <p>Cheap</p>
         </div>
-        <div class = "green-box">
+        <div class="switch-holder">
+            <label class="switch">
+                <input type="checkbox" onchange="s_good()" id = "good">
+                <span class="slider round" id="blue"></span>
+            </label>
+            <p>Good</p>
         </div>
-        <div class = "yellow-box">
+        <div class="switch-holder">
+            <label class="switch">
+                <input type="checkbox" onchange="s_fast()" id = "fast">
+                <span class="slider round" id="green"></span>
+            </label>
+            <p>Fast</p>
         </div>
     </div>
-    
+
+
+    <div class="white-container">
+        <div class="game-holder">
+            <div class="top-bar">
+                <div class="diff-selector">
+                    <select name = "diffs" id = "diff-select">
+                        <option value = "easy">Easy</option>
+                        <option value = "med" selected = "selected">Medium</option>
+                        <option value = "hard">Hard</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button id="button" onclick="hello()">Press</button>
+                </div>
+                <div class="mine-counter"></div>
+                <div class="timer"></div>
+                <div class="sound"></div>
+            </div>
+            <div class="game" id="game-holder"></div>
+        </div>
+        <div class="description">
+            <p>Развернутое описание, ссылочки и прочие радости</p>
+        </div>
+    </div>
 </body>

@@ -13,7 +13,6 @@ result = ""
 for i, char in enumerate(message):
     key_index = i%len(key)
     key_char = key[key_index]
-    print(key_char)
     char_index = alp.index(char)
     key_hcar = alp.index(key_char)
     char_index = (char_index - key_index-1)%26

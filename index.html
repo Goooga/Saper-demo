@@ -5,7 +5,7 @@
     <script type="text/javascript" src="./scripts/scripts.js"></script>
 </head>
 <body>
-    <div class="gray-container">
+<!---   <div class="gray-container">
         <div class="switch-holder">
             <label class="switch">
                 <input type="checkbox" onchange="s_cheap()" id = "cheap">
@@ -28,7 +28,7 @@
             <p>Fast</p>
         </div>
     </div>
-
+-->
 
     <div class="white-container">
         <div class="game-holder">
@@ -44,8 +44,13 @@
                     <button id="button" onclick="hello()">Press</button>
                 </div>
                 <div class="mine-counter"></div>
-                <div class="timer"></div>
-                <div class="sound"></div>
+                <div class="timer">
+                    <img src = "https://img.icons8.com/ios/452/timer.png" width="25px">
+                    <p id = timer>00:00</p>
+                </div>
+                <div class="sound" onclick="toggleSound();">
+                    <img id ="image" src = "https://i.ytimg.com/vi/FAd2_gdkg-8/maxresdefault.jpg" width="100px">
+                </div>
             </div>
             <div class="game" id="game-holder"></div>
         </div>

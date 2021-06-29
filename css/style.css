@@ -58,15 +58,20 @@
 .timer {
   height: 50px;
   width: 100px;
-  background: white;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .sound {
   height: 50px;
   width: 100px;
-  background: white;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mine-cell {
@@ -85,6 +90,8 @@
 .minefield {
   border-collapse: collapse;
 }
+
+
 
 
 

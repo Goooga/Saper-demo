@@ -18,6 +18,7 @@ function share(){
     sign = "/";
     second_number = first_number;
     first_number = 0;
+    ident = 1;
     exp.innerText = sign;
 }
 
@@ -25,6 +26,7 @@ function multiply(){
     sign = "*";
     second_number = first_number;
     first_number = 0;
+    ident = 1;
     exp.innerText = sign;
 }
 
@@ -32,6 +34,7 @@ function subtract() {
     sign = "-";
     second_number = first_number;
     first_number = 0;
+    ident = 1;
     exp.innerText = sign;
 }
 
@@ -39,6 +42,7 @@ function add() {
     sign = "+";
     second_number = first_number;
     first_number = 0;
+    ident = 1;
     exp.innerText = sign;
 }
 

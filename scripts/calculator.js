@@ -50,24 +50,24 @@ function dot(){
 
 function equally(){
     if(sign == "/"){
-        second_number = second_number/first_number;
-        exp.innerText = second_number.toString();
-        first_number = 0;
+        first_number = second_number/first_number;
+        exp.innerText = first_number.toString();
         ident = 1;
+        sign = "0"
     } else if (sign == "*"){
-        second_number = second_number * first_number;
-        exp.innerText = second_number.toString();
-        first_number = 0;
+        first_number = second_number * first_number;
+        exp.innerText = first_number.toString();
         ident = 1;
+        sign = "0"
     } else if (sign == "-"){
-        second_number = second_number - first_number;
-        exp.innerText = second_number.toString();
-        first_number = 0;
+        first_number = second_number - first_number;
+        exp.innerText = first_number.toString();
         ident = 1;
+        sign = "0"
     } else if (sign == "+"){
-        second_number = second_number + first_number;
-        exp.innerText = second_number.toString();
-        first_number = 0;
+        first_number  = second_number + first_number;
+        exp.innerText = first_number .toString();
         ident = 1;
+        sign = "0"
     }
 }

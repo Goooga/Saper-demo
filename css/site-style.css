@@ -9,7 +9,6 @@
 }
 
 .emulate{
-    background: red;
     width: 500px;
     height: 700px;
 }
@@ -33,6 +32,7 @@
     border-radius: 40px;
     width: min-content;
     padding: 10px 40px;
+    margin: 0px 0px 150px 0px;
 }
 
 .column{
@@ -45,6 +45,7 @@
 
 .profile-text{
     text-align: center;
+    margin: 25px 0px 30px 0px;
 }
 
 body{
@@ -53,15 +54,14 @@ body{
 
 .buttom{
     display: flex;
-    justify-content: space-between;
-}
-
-.but-img{
-    background: white;
+    justify-content: start;
 }
 
 .soc-img{
     width: 40px;
     height: 40px;
-    padding: 10px -50px;
+}
+
+.box{
+    width: 15px;
 }
